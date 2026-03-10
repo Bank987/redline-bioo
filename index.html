@@ -679,6 +679,27 @@
         }, 25)
     </script>
 
+<script>
+if (!location.hostname.includes("bankdevs.xyz")) {
+  window.location.href = "https://bankdevs.xyz";
+}
+</script>
+
+    <script>
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+document.onkeydown = function(e) {
+  if (
+    e.keyCode == 123 || // F12
+    (e.ctrlKey && e.keyCode == 83) || // Ctrl+S
+    (e.ctrlKey && e.keyCode == 85) || // Ctrl+U
+    (e.ctrlKey && e.shiftKey && e.keyCode == 73) // Ctrl+Shift+I
+  ) {
+    return false;
+  }
+};
+</script>
+    
 </body>
 
 </html>
